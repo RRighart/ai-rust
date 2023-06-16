@@ -1,3 +1,4 @@
+pip install tf2onnx
 
 import tensorflow as tf
 import tf2onnx
@@ -21,3 +22,6 @@ def convert_to_onnx(sourcedir, outputdir):
         print("conversion did not work")
 
 convert_to_onnx("color-model.pb", "color-model-new.onnx")
+
+convert_to_onnx("/home/jovyan/BT2023/scripts/CNN-bathtub-detector.h5", "converted_bathtub_detector.onnx")
+
